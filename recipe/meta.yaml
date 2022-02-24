@@ -1,5 +1,5 @@
 {% set name = "bubblewrap" %}
-{% set version = "0.5.0" %}
+{% set version = "0.6.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/containers/bubblewrap/archive/refs/tags/v{{ version }}.tar.gz
-  sha256: 9910917c031bc4305e5620e53a602161fdd676de9c9f7da5c082a508a880912c
+  sha256: 3fd89182cf5c628a69c03b4fef58753bcb3a94372113855e0f825c05aceb2831
 
 build:
   number: 0
