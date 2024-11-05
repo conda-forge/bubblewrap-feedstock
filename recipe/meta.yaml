@@ -1,5 +1,5 @@
 {% set name = "bubblewrap" %}
-{% set version = "0.9.0" %}
+{% set version = "0.10.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/containers/bubblewrap/archive/refs/tags/v{{ version }}.tar.gz
-  sha256: f434c7b6534445e3d39183d69460c274a23e33747204de3f27e89051208c4ef1
+  sha256: 2108fafedeec4df2c451119606c191b0bfbd88328972dbb04fb8eb56081a724f
 
 build:
   number: 0
@@ -16,12 +16,12 @@ build:
 requirements:
   build:
     - {{ compiler('c') }}
+    - {{ stdlib("c") }}
     - automake
     - autoconf
     - make
     - pkgconfig
     - libtool
-    - sysroot_linux-64 2.17  # [linux64]
   host:
     - libcap
 
