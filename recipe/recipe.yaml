@@ -12,7 +12,13 @@ source:
 
 build:
   number: 0
-  skip: true  # [not linux]
+  skip:
+    - not linux
+  script: |
+    meson _builddir -Dselinux=disabled ${MESON_ARGS}
+    meson compile -C _builddir
+    meson test -C _builddir
+    meson install -C _builddir
 
 requirements:
   build:
