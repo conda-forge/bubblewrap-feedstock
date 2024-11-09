@@ -9,6 +9,8 @@ Package license: LGPL-2.0-or-later
 
 Summary: Unprivileged sandboxing tool
 
+Development: https://github.com/containers/bubblewrap
+
 Current build status
 ====================
 
