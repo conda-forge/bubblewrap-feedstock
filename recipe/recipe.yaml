@@ -24,6 +24,7 @@ requirements:
   build:
     - ${{ compiler('c') }}
     - ${{ stdlib('c') }}
+    - pkg-config
     - meson
     - ninja
   host:
