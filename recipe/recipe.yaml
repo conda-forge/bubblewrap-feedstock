@@ -11,7 +11,7 @@ source:
   sha256: cfeeb15fcc47d177d195f06fdf0847e93ee3aa6bf46f6ac0a141fa142759e2c3
 
 build:
-  number: 0
+  number: 1
   skip:
     - not linux
   script: |
@@ -32,7 +32,7 @@ requirements:
 
 tests:
   - script:
-    - bwrap --help
+      - bwrap --help
 
 about:
   homepage: https://github.com/containers/bubblewrap
