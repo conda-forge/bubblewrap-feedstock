@@ -1,6 +1,6 @@
 context:
   name: bubblewrap
-  version: "0.11.1"
+  version: "0.11.2"
 
 package:
   name: ${{ name|lower }}
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://github.com/containers/bubblewrap/archive/refs/tags/v${{ version }}.tar.gz
-  sha256: fb6ebf0264dfe9fb88777d352deeedf5aecf2e36e78da148157036b647f86e0f
+  sha256: 3fc7b94dd133539365dc573fe79d207802ce433e6e34b791a8b1080b17803a28
 
 build:
   number: 0
